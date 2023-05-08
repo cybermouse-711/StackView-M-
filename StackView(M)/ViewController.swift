@@ -32,7 +32,11 @@ class ViewController: UIViewController {
     
     @IBAction func changeColorButtonDidTapped() {
         redColorView.alpha = 1.0
-    }
+        changeColorButton.setTitle("NEXT", for: .normal)
+        
+        
+        
+    } 
     
 
 }
