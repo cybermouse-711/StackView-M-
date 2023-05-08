@@ -18,12 +18,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        redColorView.layer.cornerRadius = 50
+        yellowColorView.layer.cornerRadius = 50
+        greenColorView.layer.cornerRadius = 50
+        changeColorButton.layer.cornerRadius = 10
+        
+        redColorView.alpha = 0.3
+        yellowColorView.alpha = 0.3
+        greenColorView.alpha = 0.3
+       
     }
 
     
     @IBAction func changeColorButtonDidTapped() {
-        
+        redColorView.alpha = 1.0
     }
     
 
